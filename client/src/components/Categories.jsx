@@ -1,6 +1,6 @@
 import React from "react";
 import { categories } from "../assets/assets.js";
-import { useAppContext } from "../context/appContext.jsx";
+import { useAppContext } from "../context/AppContext.jsx";
 
 
 export const Categories = () => {
