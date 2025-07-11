@@ -16,7 +16,7 @@ const orderrouter = require('./routes/orderRoutes.js')
 
 
 
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173','https://unikart-server.vercel.app']
 App.use(cors({
     origin: allowedOrigins,
     credentials:true
