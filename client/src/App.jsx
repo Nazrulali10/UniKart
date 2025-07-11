@@ -12,12 +12,13 @@ import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import { AddAddress } from "./pages/AddAddress";
 import { MyOrders } from "./pages/MyOrders";
-import { SellerLogin } from "./components/seller/sellerLogin";
 import SellerLayout from "./pages/seller/SellerLayout";
 import { ProductList } from "./pages/seller/ProductList";
 import { Orders } from "./pages/seller/Orders";
 import { AddProduct } from "./pages/seller/AddProduct";
 import ScrollToTop from "./animations/ScrollToTop";
+import SellerLogin from "./components/seller/SellerLogin";
+
 
 
 export default function App(){
