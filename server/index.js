@@ -42,8 +42,9 @@ App.use('/api/orders',orderrouter)
 connectDB()
     connectCloudinary()
 
-App.listen(PORT,()=>{
-    console.log(`server is running on ${PORT}`)
+// App.listen(PORT,()=>{
+//     console.log(`server is running on ${PORT}`)
     
-})
+// })
+module.exports = App;
  
