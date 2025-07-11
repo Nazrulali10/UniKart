@@ -1,8 +1,14 @@
-import { meta } from "@eslint/js";
+
+
+// const BASE_URL =
+//   process.env.NODE_ENV === 'development'
+//     ? 'http://localhost:4000/api'
+//     : `${meta.env.VITE_BACKEND_URL}/api`;
 
 const BASE_URL =
-  process.env.NODE_ENV === 'development'
+  import.meta.env.DEV
     ? 'http://localhost:4000/api'
-    : `${meta.env.VITE_BACKEND_URL}/api`;
+    : `${import.meta.env.VITE_BACKEND_URL}/api`;
+
 
 export default BASE_URL;
