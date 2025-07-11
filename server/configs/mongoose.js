@@ -8,6 +8,7 @@ try {
     await mongoose.connect(`${process.env.MONGODB_URI}`)
     
 } catch (error) {
+    console.log(error.message)
     console.log("error in connecting db")
 }
 }
