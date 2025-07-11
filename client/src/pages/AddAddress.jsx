@@ -3,7 +3,7 @@ import BASE_URL from '../../config'
 
 import toast from 'react-hot-toast'
 import AddressAnimation from '../animations/animations'
-import { useAppContext } from '../context/AsppContext'
+import { useAppContext } from '../context/AppContext'
 
 const InputFeild =({type,placeholder,handleChange,address,name})=>(
         <input className='w-full px-2 py-2.5 border border-gray-500/20 rounded outline-none text-gray-500' type={type} placeholder={placeholder} onChange={handleChange} name={name} value={address[name]} required />
