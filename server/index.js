@@ -39,8 +39,16 @@ App.use('/api/cart',cartrouter)
 App.use('/api/address',addressrouter)
 App.use('/api/orders',orderrouter)
 
-connectDB()
-    connectCloudinary()
+try {
+  await connectDB();
+  await connectCloudinary();
+  console.log('✅ DB and Cloudinary connected');
+} catch (err) {
+  console.error('❌ Startup error:', err);
+  throw err; // This causes the function to crash with a clear error log
+}
+
+
 
 // App.listen(PORT,()=>{
 //     console.log(`server is running on ${PORT}`)
