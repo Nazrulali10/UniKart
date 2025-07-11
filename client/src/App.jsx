@@ -17,7 +17,7 @@ import { ProductList } from "./pages/seller/ProductList";
 import { Orders } from "./pages/seller/Orders";
 import { AddProduct } from "./pages/seller/AddProduct";
 import ScrollToTop from "./animations/ScrollToTop";
-import SellerLogin from "./components/seller/SellerLogin";
+import {SellerLogin} from './components/seller/SellerLogin'
 
 
 
