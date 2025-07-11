@@ -1,3 +1,4 @@
+import { meta } from "@eslint/js";
 
 const BASE_URL =
   process.env.NODE_ENV === 'development'
