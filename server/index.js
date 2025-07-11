@@ -14,7 +14,7 @@ const addressrouter = require('./routes/address.Routes.js')
 const orderrouter = require('./routes/orderRoutes.js')
 
 
-
+dotenv.config()
 
 const allowedOrigins = ['http://localhost:5173','https://unikart-client.vercel.app']
 App.use(cors({
@@ -27,7 +27,7 @@ App.use(express.json({ limit: '50mb' }))
 App.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 
-dotenv.config()
+
 
 App.get("/",(req,res)=>{
     res.send("its working")
