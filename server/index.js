@@ -40,8 +40,20 @@ App.use('/api/address',addressrouter)
 App.use('/api/orders',orderrouter)
 
 
-App.listen(PORT,()=>{
-    console.log(`server is running on ${PORT}`)
-    connectDB()
-    connectCloudinary()
-})
+// App.listen(PORT,()=>{
+//     console.log(`server is running on ${PORT}`)
+//     connectDB()
+//     connectCloudinary()
+// })
+(async () => {
+    try {
+        await connectDB();
+        connectCloudinary();
+
+        App.listen(PORT, () => {
+            console.log(`✅ Server is running on ${PORT}`);
+        });
+    } catch (error) {
+        console.error('❌ Failed to start server:', error);
+    }
+})();
