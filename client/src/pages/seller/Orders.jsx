@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-import { useAppContext } from '../../context/appContext'
+
 import toast from 'react-hot-toast'
 import BASE_URL from '../../../config'
+import { useAppContext } from '../../context/AppContext'
 
 export const Orders = () => {
   const [orders,setOrders] = useState([])
