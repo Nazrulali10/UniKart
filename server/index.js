@@ -39,18 +39,23 @@ App.use('/api/cart',cartrouter)
 App.use('/api/address',addressrouter)
 App.use('/api/orders',orderrouter)
 
-const starting = async()=>{
-    try {
-  await connectDB();
-  await connectCloudinary();
-  console.log('✅ DB and Cloudinary connected');
-} catch (err) {
-  console.error('❌ Startup error:', err);
-  throw err; // This causes the function to crash with a clear error log
-}
-}
+let isConnected = false;
 
-starting()
+const starting = async () => {
+  if (!isConnected) {
+    try {
+      await connectDB();
+      await connectCloudinary();
+      isConnected = true;
+      console.log('✅ DB and Cloudinary connected');
+    } catch (err) {
+      console.error('❌ Startup error:', err);
+      throw err;
+    }
+  }
+};
+
+starting();
 
 
 
