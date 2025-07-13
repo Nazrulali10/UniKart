@@ -38,6 +38,7 @@ export const MainBanner = () => {
           px-4 
           md:pl-18 lg:pl-24
           pb-24 md:pb-0
+          leading-tight
         "
       >
         <h1 
