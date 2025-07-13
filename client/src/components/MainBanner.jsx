@@ -90,7 +90,7 @@ export const MainBanner = () => {
           justify-center 
           items-end md:items-start 
           px-4 md:pl-18 lg:pl-24 
-          pb-24 md:pb-0
+          pb-8 md:pb-0 pr-12
         "
       >
         {/* Heading */}
@@ -98,9 +98,10 @@ export const MainBanner = () => {
           className="
             text-2xl md:text-4xl lg:text-5xl 
             font-bold 
-            max-w-xs md:max-w-3xl lg:max-w-5xl 
+            max-w-50 md:max-w-50 lg:max-w-lg 
             leading-tight 
             text-right md:text-left
+
           "
         >
           Shop What You Love, Not what others Love!
@@ -112,7 +113,7 @@ export const MainBanner = () => {
             mt-6 font-medium 
             flex flex-col md:flex-row 
             gap-4 
-            self-center md:self-start
+            
           "
         >
           <Link 
