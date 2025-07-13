@@ -27,9 +27,9 @@ export const MainBanner = () => {
       <img src="/banner.jpg" alt="banner" className="w-full hidden md:block" />
       {/* Mobile banner image */}
       <img src="/images/bannerm.jpg" alt="banner" className="w-full md:hidden" />
-      
+
       {/* Text container */}
-      <div 
+      <div
         className="
           absolute inset-0 flex 
           flex-col 
@@ -40,7 +40,7 @@ export const MainBanner = () => {
           pb-24 md:pb-0
         "
       >
-        <h1 
+        <h1
           className="
             text-2xl md:text-4xl lg:text-5xl 
             font-bold 
@@ -52,15 +52,15 @@ export const MainBanner = () => {
           Shop What You Love, Not what others Love!
         </h1>
 
-        <div className="flex md:items-center mt-6 font-medium gap-4">
-          <Link 
-            to={'/products'} 
+        <div className="flex flex-col md:flex-row md:items-center mt-6 font-medium gap-4">
+          <Link
+            to={'/products'}
             className="px-6 py-3 bg-blue-300 text-black rounded hover:bg-blue-200 transition"
           >
             Shop now
           </Link>
-          <Link 
-            to={'/products'} 
+          <Link
+            to={'/products'}
             className="hidden md:block px-6 py-3 border border-gray-400 rounded hover:border-blue-700 transition"
           >
             Explore deals
@@ -69,5 +69,4 @@ export const MainBanner = () => {
       </div>
     </div>
   );
-}
-
+};
