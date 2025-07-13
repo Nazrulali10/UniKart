@@ -3,7 +3,7 @@ import { features } from '../assets/assets'
 
 export const BottomBanner = () => {
   return (
-    <div className='relative absolute mt-24' >
+    <div className='relative absolute mt-24 mb-1' >
         <img className='w-full hidden md:block' src='/images/bottombanner.jpg'/>
         <img className='w-full block md:hidden' src='/images/bottombannerm.jpg'/>
         <div className='absolute inset-0 flex flex-col md:items-end items-center md:justify-center md:pt-0 pt-20 md:pr-26'>

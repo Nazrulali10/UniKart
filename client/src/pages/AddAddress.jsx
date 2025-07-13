@@ -73,7 +73,7 @@ export const AddAddress = () => {
                 </button>
               </form>
             </div>
-            {/* <img src='/images/bookcat.jpg' alt='addaddress' className="w-full md:w-1/2 object-cover"/> */}
+           
             <div className="-ml-10 md:-mt-30 md:-ml-30">
             <AddressAnimation />
             </div>
