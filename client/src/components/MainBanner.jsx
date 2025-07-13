@@ -96,9 +96,9 @@ export const MainBanner = () => {
         {/* Heading */}
         <h1 
           className="
-            text-1xl md:text-4xl lg:text-5xl 
+            text-2xl md:text-4xl lg:text-5xl 
             font-bold 
-            max-w-50 md:max-w-50 lg:max-w-lg 
+            max-w-45 md:max-w-50 lg:max-w-lg 
             leading-tight 
             text-right md:text-left
 

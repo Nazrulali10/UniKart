@@ -44,8 +44,8 @@ export const BottomBanner = () => {
       />
 
       {/* Content overlay */}
-      <div className="relative z-10 flex flex-col md:items-end items-center md:justify-center md:pt-0 pt-20 md:pr-26 px-4">
-        <div className="bg-white/80 p-4 rounded-md backdrop-blur-sm">
+      <div className="relative z-10 flex flex-col md:items-end items-center justify-center py-12 md:pr-26 md:py-12 px-4">
+        <div className=" p-4 rounded-md ">
           <h1 className="font-semibold text-2xl md:text-3xl text-center md:text-right">
             Why we are the Best!
           </h1>
