@@ -226,7 +226,7 @@ export default function Navbar() {
   </NavLink>
 )}
 <NavLink
-  to="/contacts"
+  to="/add-address"
   onClick={() => setOpen(false)}
   className="hover:text-blue-600 transition-colors"
 >
