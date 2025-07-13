@@ -90,7 +90,7 @@ export const MainBanner = () => {
           justify-center 
           items-end md:items-start 
           px-4 md:pl-18 lg:pl-24 
-          pb-8 md:pb-0 pr-12
+          pb-8 md:pb-0 pr-8
         "
       >
         {/* Heading */}
@@ -118,7 +118,7 @@ export const MainBanner = () => {
         >
           <Link 
             to="/products" 
-            className="px-6 py-3 bg-blue-300 text-black rounded hover:bg-blue-200 transition text-center"
+            className="md:px-6 md:py-3 px-4 py-2 bg-blue-300 text-black rounded hover:bg-blue-200 transition text-center"
           >
             Shop now
           </Link>
