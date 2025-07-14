@@ -39,11 +39,11 @@ export const SellerLogin = () => {
             <p className='font-medium text-2xl m-auto text-black'><span className='text-blue-600'>Seller</span> Login</p>
             <div className='w-full'>
                 <p className='text-black'>Email</p>
-                <input type='email' onChange={(e)=>setEmail(e.target.value)} value={email} placeholder='enter your email' className='w-full border border-gray-800 outline-blue-400 p-2 mt-1 rounded' required/>
+                <input type='email' onChange={(e)=>setEmail(e.target.value)} value={email} placeholder='enter your email' className='w-full text-black border border-gray-800 outline-blue-400 p-2 mt-1 rounded' required/>
             </div>
             <div className='w-full'>
                 <p className='text-black'>Password</p>
-                <input type='password' onChange={(e)=>setPassword(e.target.value)} value={password} placeholder='enter your password' className='w-full border border-gary-800 outline-blue-400 p-2 mt-1 rounded' required/>
+                <input type='password' onChange={(e)=>setPassword(e.target.value)} value={password} placeholder='enter your password' className='w-full text-black border border-gary-800 outline-blue-400 p-2 mt-1 rounded' required/>
             </div>
             <button className='text-white w-full py-2 rounded-md cursor-pointer bg-blue-600'>Login</button>
         </div>
