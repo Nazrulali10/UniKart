@@ -52,7 +52,7 @@ export const AddAddress = () => {
   return (
     <div className='mt-16 pb-12'>
         <p className='text-2xl md:text-3xl font-medium '>Add shipping <span className='font-semibold text-blue-600'>address</span></p>
-        <div className='flex flex-col md:flex-row justify-between mt-10'>
+        <div className='flex flex-col md:flex-row justify-between mt-1 md:mt-2'>
             
             <div className='flex-1 max-w-md'>
               <form onSubmit={onSubmitHandler} className='space-y-3 mt-6 text-sm' >
@@ -68,7 +68,7 @@ export const AddAddress = () => {
                 </div>
                 <InputFeild handleChange={handleChange} type="text" address={address} placeholder={"country"} name='country' />
                 <InputFeild handleChange={handleChange} type="number" address={address} placeholder={"Mobile no"} name='mobile' />
-                <button className='mt-6 w-full cursor-pointer bg-blue-600 text-white py-3'>
+                <button className='mt-2 w-full cursor-pointer bg-blue-600 text-white py-3'>
                   Save address
                 </button>
               </form>

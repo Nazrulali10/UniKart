@@ -29,7 +29,7 @@ const product = products.find((item)=>item._id.toString()===id)
     },[product])
 
     return product && (
-        <div className="max-w-6xl w-full px-6">
+        <div className="max-w-6xl w-full px-6 mt-5">
             <p>
                 <Link to={"/"}>Home</Link> /
                 <Link to={"/products"}>Products</Link> /
@@ -41,14 +41,14 @@ const product = products.find((item)=>item._id.toString()===id)
                 <div className="flex gap-3">
                     <div className="flex flex-col gap-3">
                         {product.images.map((image, index) => (
-                            <div key={index} onClick={() => setThumbnail(image)} className="border max-w-24 border-gray-500/30 rounded overflow-hidden cursor-pointer" >
-                                <img src={image} alt={`Thumbnail ${index + 1}`} />
+                            <div key={index} onClick={() => setThumbnail(image)} className="border w-24 h-24 border-gray-500/30 rounded overflow-hidden cursor-pointer" >
+                                <img src={image} alt={`Thumbnail ${index + 1}`} className="object-contain w-full h-full" />
                             </div>
                         ))}
                     </div>
 
-                    <div className="border border-gray-500/30 max-w-100 rounded overflow-hidden">
-                        <img src={thumbnail} alt="Selected product" />
+                    <div className="border border-gray-500/30 w-100 h-130 rounded overflow-hidden">
+                        <img src={thumbnail} alt="Selected product" className="object-contain w-full h-full" />
                     </div>
                 </div>
 
