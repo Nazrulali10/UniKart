@@ -21,7 +21,7 @@ const Register = async(req,res)=>{
         sameSite:process.env.NODE_ENV === "production"?"none":"strict",
         secure:process.env.NODE_ENV === "production",
     })
-    return res.json({success:true , message:{name:user.name,email:user.email}})
+    return res.json({success:true , user})
   } catch (error) {
     console.log(error.message)
     return res.json({success:false , message:error.message})
