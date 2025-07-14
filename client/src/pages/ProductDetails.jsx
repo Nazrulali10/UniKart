@@ -47,7 +47,7 @@ const product = products.find((item)=>item._id.toString()===id)
                         ))}
                     </div>
 
-                    <div className="border border-gray-500/30 w-100 h-130 rounded overflow-hidden">
+                    <div className="border border-gray-500/30 w-90 h-90 rounded overflow-hidden">
                         <img src={thumbnail} alt="Selected product" className="object-contain w-full h-full" />
                     </div>
                 </div>
