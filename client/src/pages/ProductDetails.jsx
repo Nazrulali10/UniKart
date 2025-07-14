@@ -41,7 +41,7 @@ const product = products.find((item)=>item._id.toString()===id)
                 <div className="flex gap-3">
                     <div className="flex flex-col gap-3">
                         {product.images.map((image, index) => (
-                            <div key={index} onClick={() => setThumbnail(image)} className="border w-24 h-24 border-gray-500/30 rounded overflow-hidden cursor-pointer" >
+                            <div key={index} onClick={() => setThumbnail(image)} className="border w-15 h-15 md:w-24 md:h-24 border-gray-500/30 rounded overflow-hidden cursor-pointer" >
                                 <img src={image} alt={`Thumbnail ${index + 1}`} className="object-contain w-full h-full" />
                             </div>
                         ))}
